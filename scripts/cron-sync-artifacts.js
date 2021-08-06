@@ -26,7 +26,7 @@ if (isQX) {
         url: "http://localhost:9999/api/cron/sync-artifacts"
     });
 } else {
-    $.httpClient.get(url);
+    $httpClient.get(url);
 }
 $.log("同步配置成功！");
 $.done();
