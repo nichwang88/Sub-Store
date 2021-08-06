@@ -21,13 +21,16 @@ cron "0 12 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Stor
 const $ = API();
 const { isQX, isLoon, isSurge } = ENV();
 const url = 'https://sub.store/api/cron/sync-artifacts';
+/**
 if (isQX) {
     $task.fetch({
         url: "http://localhost:9999/api/cron/sync-artifacts"
     });
 } else {
-    $httpClient.get(url);
+    $.http.get(url);
 }
+ */
+$httpClient.get(url);
 $.log("同步配置成功！");
 $.done();
 
