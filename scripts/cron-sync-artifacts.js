@@ -30,7 +30,7 @@ if (isQX) {
     $.http.get(url);
 }
  */
-$httpClient.get(url);
+$.http.get(url);
 $.log("同步配置成功！");
 $.done();
 
